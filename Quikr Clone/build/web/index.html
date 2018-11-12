@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 71%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color:#dddddd;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.signup {
+    
+    color: white;
+    width:40%;
+     padding: 14px 20px;
+    background-color: #b3c6ff;
+}
+.login{
+     background-color:#4ae03a;
+    color: white;
+    padding: 14px 20px;
+    width:40%;
+}
+
+</style>
+</head>
+<body id="a">
+<div  class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+        <center><h1>Login Form</h1></center>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname"  required><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="login">Login</button>
+      <button type="button" class="signup">Signup</button>
+    
+  </form>
+</div>
+</div>
+</body>
+</html>
